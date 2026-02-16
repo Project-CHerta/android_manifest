@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="cherta"
+          fetch="https://github.com/Project-CHerta"
+          revision="25h2"  />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com"
+          revision="25h2" />
+
+  <project path="manifest" name="android_manifest" remote="cherta" />
+
+  <project path="bionic" name="android_bionic" groups="pdk" remote="cherta" />
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="cherta" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="cherta" />
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="cherta" />
+  <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="cherta" />
+
+  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" groups="pdk-cw" remote="cherta" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="cherta" />
+
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="cherta" >
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed,sysui-studio" remote="cherta" >
+   <linkfile src="root.bp" dest="Android.bp" />
+   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="external/bouncycastle" name="android_external_bouncycastle" groups="pdk" remote="cherta" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherta" />
+
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk,sysui-studio" remote="cherta" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="cherta" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="cherta" />
+
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="cherta" />
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="cherta" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk,sysui-studio" remote="cherta" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cherta" />
+
+  <project path="packages/apps/ColumbusService" name="android_packages_apps_ColumbusService" remote="cherta" />
+  <project path="packages/apps/OpenDelta" name="android_packages_apps_OpenDelta" remote="cherta" />
+  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="cherta" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="cherta" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" groups="pdk" remote="cherta" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="cherta" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="cherta" />
+  <project path="packages/modules/UprobeStats" name="android_packages_modules_UprobeStats" remote="cherta" />
+
+  <project path="system/bpf" name="android_system_bpf" groups="pdk" remote="cherta" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="cherta" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="cherta" />
+  <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="cherta" />
+
+  <project path="vendor/certification" name="android_vendor_certification" revision="main" remote="cherta" />
+  <project path="vendor/cherta" name="android_vendor_cherta" remote="cherta" />
+  <project path="vendor/custom-preference" name="android_vendor_custom-preference" remote="cherta" />
+  <project path="vendor/extract-utils" name="Project-CHerta/android_vendor_extract-utils" revision="main" remote="gitlab" />
+  <project path="vendor/gms" name="Project-CHerta/proprietary_vendor_gms" remote="gitlab" />
+</manifest>
