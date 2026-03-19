@@ -2,11 +2,11 @@
 <manifest>
 
   <remote name="cherta"
-          fetch="https://github.com/Project-CHerta"
+          fetch="git@github.com:Project-CHerta"
           revision="25h2"  />
 
   <remote name="gitlab"
-          fetch="https://gitlab.com"
+          fetch="ssh://git@gitlab.com"
           revision="25h2" />
 
   <project path="manifest" name="android_manifest" remote="cherta" />
