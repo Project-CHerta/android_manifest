@@ -21,6 +21,7 @@
 
   <remove-project name="kernel/configs" />
 
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
 
   <remove-project name="platform/bootable/deprecated-ota" />
@@ -31,6 +32,7 @@
 
   <remove-project name="platform/external/bouncycastle" />
   <remove-project name="platform/external/dng_sdk" />
+  <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/tinycompress" />
 
   <remove-project name="platform/frameworks/av" />

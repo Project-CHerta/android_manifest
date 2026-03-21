@@ -11,6 +11,7 @@
 
   <project path="manifest" name="android_manifest" revision="personal" remote="cherta" />
 
+  <project path="art" name="android_art" groups="pdk" remote="cherta" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="cherta" />
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="cherta" />
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="cherta" />
@@ -35,6 +36,7 @@
 
   <project path="external/bouncycastle" name="android_external_bouncycastle" groups="pdk" remote="cherta" />
   <project path="external/dng_sdk" name="android_external_dng_sdk" groups="pdk" remote="cherta" />
+  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="cherta" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cherta" />
 
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk,sysui-studio" remote="cherta" />
