@@ -9,7 +9,7 @@
           fetch="ssh://git@gitlab.com"
           revision="25h2" />
 
-  <project path="manifest" name="android_manifest" remote="cherta" />
+  <project path="manifest" name="android_manifest" revision="personal" remote="cherta" />
 
   <project path="bionic" name="android_bionic" groups="pdk" remote="cherta" />
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="cherta" />
